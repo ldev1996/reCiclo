@@ -1,5 +1,7 @@
 <template>
-    Hello World
+    <h1 class="text-3xl font-bold text-green-400 text-center">
+        Hello world!
+    </h1>
 </template>
 
 <script lang='js'>
