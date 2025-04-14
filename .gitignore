@@ -25,3 +25,6 @@ logs
 
 # Tailwind (tailwind.config.ts is necessary only to intellisense)
 tailwind.config.ts
+
+# Service worker
+sw.*

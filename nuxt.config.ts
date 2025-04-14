@@ -13,24 +13,33 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'ECOmunidade',
-      short_name: 'ECO',
-      description: 'Troque e recicle com sua comunidade',
-      theme_color: '#00C950', // green-500
-      background_color: '#F9FAFB', // gray-50
-      display: 'standalone',
-      start_url: '/',
-      icons: [
+      "name": "ECOmunidade",
+      "short_name": "ECO",
+      "description": "Troque e recicle com sua comunidade",
+      "start_url": "/",
+      "display": "standalone",
+      "background_color": "#F9FAFB", // green-500
+      "theme_color": "#00C950", // gray-50
+      "lang": "pt-br",
+      "scope": "/",
+      "icons": [
         {
-          src: '/icon-192.png',
-          sizes: '192x192',
-          type: 'image/png'
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
         },
         {
-          src: '/icon-512.png',
-          sizes: '512x512',
-          type: 'image/png'
+          "src": "/icon-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
         }
+      ]
+    }
+  },
+  app: {
+    head: {
+      link: [
+        { rel: 'manifest', href: '/manifest.webmanifest' }
       ]
     }
   }
