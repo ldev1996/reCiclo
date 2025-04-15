@@ -40,8 +40,7 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'manifest', href: '/manifest.webmanifest' }
-      ],
-      title: "ECOmunidade"
+      ]
     }
   }
 });
