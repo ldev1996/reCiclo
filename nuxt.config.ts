@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
     // redirectOptions: {}
-    url: process.env.POSTGRES_HOST,
+    url: process.env.POSTGRES_URL,
     key: process.env.SUPABASE_ANON_KEY
   },
   app: {
