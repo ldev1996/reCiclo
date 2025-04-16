@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ["@vite-pwa/nuxt"],
+  modules: ["@vite-pwa/nuxt", "@nuxtjs/supabase"],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -35,6 +35,12 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+  supabase: {
+    redirect: false,
+    // redirectOptions: {}
+    url: process.env.POSTGRES_HOST,
+    key: process.env.SUPABASE_ANON_KEY
   },
   app: {
     head: {
