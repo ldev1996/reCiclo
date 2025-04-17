@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/*
+
+Estilo Visual (Tailwind CSS)
+
+Cores:
+    Primária: green-500 – Sustentabilidade e ação ecológica
+    Secundária: lime-400 – Inovação, frescor e dinamismo
+    Destaque: amber-400 – Energia, comunidade e visibilidade
+    Fundo claro: gray-50 – Limpo e acessível
+    Texto principal: gray-800 – Legibilidade alta
+    Erro/alerta: red-400
+    Sucesso: emerald-500
+
+Fontes:
+    Título: 'Poppins', sans-serif – Moderna, amigável e acessível
+    Texto: 'Inter', sans-serif – Clara, versátil, excelente legibilidade
+
+Elementos de UI:
+    Botões: rounded-2xl px-4 py-2 font-semibold shadow-md hover:brightness-95
+    Inputs: rounded-lg border-gray-300 focus:ring-green-500 focus:border-green-500
+    Cards: bg-white shadow-md rounded-2xl p-4
+    Ícones: lucide-react com stroke gray-600, hover green-500
+
+Extras:
+    Modo escuro: bg-gray-900 text-gray-100, com verde e âmbar adaptados para contraste
+    Acessibilidade: Contrast ratio AA mínimo, texto com espaçamento e botões com foco visual
+
+*/
