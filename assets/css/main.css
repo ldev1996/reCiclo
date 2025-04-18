@@ -15,9 +15,30 @@
 
     /* --color-background: var(--color-gray-50);
     --color-main: var(--color-gray-950); */
+    --color-error-light: var(--color-red-400);
     --color-error: var(--color-red-500);
+    --color-error-dark: var(--color-red-600);
+
     --color-sucess: var(--color-emerald-500);
     --color-logo: #20693C;
+}
+
+:is(p):not([class]) {
+    @apply text-gray-950
+}
+
+:where(input[type="email"], input[type="text"], input[type="password"]) {
+    @apply shadow border-2 border-gray-200 text-gray-600 p-2 rounded
+    focus:border-primary focus:outline focus:outline-primary
+}
+
+:where(input[type="email"]) {
+    @apply invalid:border-error invalid:text-error-dark
+    focus:invalid:border-error focus:invalid:outline-error
+}
+
+:where(button) {
+    @apply cursor-pointer
 }
 
 /*

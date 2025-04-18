@@ -1,8 +1,8 @@
 <template>
   <div class="min-h-screen bg-[#FFF7E3] flex flex-col items-center justify-center px-6 text-gray-800">
     <div class="max-w-xl text-center space-y-6">
-      <Logo size="text-4xl"/>
-      <p class="text-lg">
+      <Logo size="text-3xl xl:text-5xl"/>
+      <p class="xl:text-xl">
         Conectando pessoas para transformar resíduos em recursos. Doe, troque ou venda materiais recicláveis com impacto social e ambiental.
       </p>
 
