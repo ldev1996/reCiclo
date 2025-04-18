@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+@theme inline {
+    --color-primary-light: var(--color-green-400);
+    --color-primary: var(--color-green-500);
+    --color-primary-dark: var(--color-green-600);
+
+    --color-secondary-light: var(--color-lime-400);
+    --color-secondary: var(--color-lime-500);
+    --color-secondary-dark: var(--color-lime-600);
+
+    --color-highlight-light: var(--color-amber-400);
+    --color-highlight: var(--color-amber-500);
+    --color-highlight-dark: var(--color-amber-600);
+
+    /* --color-background: var(--color-gray-50);
+    --color-main: var(--color-gray-950); */
+    --color-error: var(--color-red-500);
+    --color-sucess: var(--color-emerald-500);
+    --color-logo: #20693C;
+}
+
 /*
 
 Estilo Visual (Tailwind CSS)
