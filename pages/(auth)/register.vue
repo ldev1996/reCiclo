@@ -1,7 +1,7 @@
 <template>
   <!-- <ClientOnly> -->
     <div class="flex flex-col items-center space-y-4">
-      <form method="post" class="w-full flex flex-col gap-4 px-4 pt-4" @submit.prevent="handleSubmit()">
+      <form class="w-full flex flex-col gap-4 px-4 pt-4" @submit.prevent="handleSubmit()">
         <input
           type="text" required
           name="username" id="username"
