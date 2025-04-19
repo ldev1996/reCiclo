@@ -50,7 +50,6 @@
       email: form.value.email,
       password: form.value.password,
       options: {
-        emailRedirectTo: 'http://localhost:3000/confirm',
         data: {
           full_name: form.value.username
         }
