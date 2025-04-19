@@ -4,18 +4,14 @@
 
 <script setup lang="ts">
     definePageMeta({
-        layout: "auth"
+        layout: 'auth'
     })
 
     const user = useSupabaseUser()
-    const redirectInfo = useSupabaseCookieRedirect()
 
     watch(user, () => {
-    if (user.value) {
-        // Get redirect path, and clear it from the cookie
-        const path = redirectInfo.pluck()
-        // Redirect to the saved path, or fallback to home
-        return navigateTo(path || '/feed/') 
-    }
+        if (user.value && user.value.id && user.value.email_confirmed_at) {
+            return navigateTo('/feed')
+        }
     }, { immediate: true })
 </script>
