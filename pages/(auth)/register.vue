@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+  <!-- <ClientOnly> -->
     <div class="flex flex-col items-center space-y-4">
       <form method="post" class="w-full flex flex-col gap-4 px-4 pt-4" @submit.prevent="handleSubmit()">
         <input
@@ -29,7 +29,7 @@
       </form>
       <p>Já tem uma conta? <NuxtLink class="text-primary underline" to="/login">Fazer login</NuxtLink></p>
     </div>
-  </ClientOnly>
+  <!-- </ClientOnly> -->
 </template>
   
 <script setup lang="js">
