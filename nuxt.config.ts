@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
@@ -37,7 +36,13 @@ export default defineNuxtConfig({
     }
   },
   supabase: {
-    redirect: false,
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      include: undefined,
+      exclude: ['/', '/register'],
+      saveRedirectToCookie: true,
+    },
     url: process.env.POSTGRES_URL,
     key: process.env.SUPABASE_ANON_KEY
   },
